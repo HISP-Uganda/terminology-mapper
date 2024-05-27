@@ -44,7 +44,7 @@ const TerminologyForm = () => {
             }}
             validationSchema={TerminologySchema}
             onSubmit={async (values, actions) => {
-                const response = await mutateAsync({
+                await mutateAsync({
                     ...values,
                     mappings: [],
                     index,
